@@ -9,7 +9,15 @@
     <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
+    <!-- <form id="sizePicker" onsubmit="makeGrid(document.getElementById('inputHeight').value, document.getElementById('inputWidth').value )">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit">
+    </form> -->
+
+    <form id="sizePicker" onsubmit="makeGrid(event)">
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1">
         Grid Width:
